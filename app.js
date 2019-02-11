@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 5000
 
 
 //set the template engine ejs
@@ -15,7 +16,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-server = app.listen(5000)
+server = app.listen(port)
 
 
 
